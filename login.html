@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<script>
+    
+        function conferevazio() 
+        {
+            var user = document.getElementById('usuario').value;
+            var pass = document.getElementById('password').value;
+
+            if(user == '' || pass== '')
+            {
+                alert("Dados invalidos");
+            }
+            else
+            {
+                alert("Login Efetuado com Sucesso");
+            }
+        }
+
+</script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Login Focus</title>
+</head>
+
+
+<body>
+    <img src="focus.png" alt="Simbolo da Focus" class="focus" >
+    <section>
+        <form class="balao" onsubmit="conferevazio()">
+
+                 <label for="usuario"class="usulabel">Login</label>
+                 <input type="text" id="usuario" autocomplete="off" placeholder="Nome de Usuario" class="usuario">
+                 <label for="password" class="passlabel">Senha</label>
+                 <input type="password" id="password" autocomplete="off" placeholder="Insira sua Senha" class="senha">
+                    <input type="submit" value="Login" class="submit">
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+                    <a href="#"class="registro">Registre-se</a>
+                    <p>Entre com  </p>
+                    <a href="#"><img src="google.png"class="google" ></a>
+                    <a href="#"><img src="face.png" class="face"></a>
+                    <img src="tutuba.png" alt="Tubarão"class="tutuba">
+        </form>
+    </section>
+</body>
+</html>
